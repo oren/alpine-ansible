@@ -1,0 +1,3 @@
+alias drm='docker stop $(docker ps -q) ; docker rm $(docker ps -aq)'
+alias drmi='docker rmi $(docker images -f "dangling=true" -q)'
+alias rmi-all='docker rmi -f $(docker images -aq)'

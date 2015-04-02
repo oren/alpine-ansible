@@ -1,0 +1,39 @@
+usage: docker-compose run deploy [SCRIPT]
+
+if SCRIPT is not provided the deploy.js script will run.
+
+available SCRIPTS:
+
+  create-elb
+
+    create donate ELB.
+
+  delete-elb
+
+    delete donate ELB.
+
+  create-ec2s
+
+    create 4 instances of EC2.
+
+  setup-ec2 [1-4]
+
+    install and run the project on EC2.
+
+  register-ec2 [1-4]
+
+    register EC2 with an ELB.
+
+  unregister-ec2 [1-4]
+
+    unregister EC2 from an ELB.
+
+  registered-ec2 [1-4]
+
+    register EC2 with an ELB.
+
+  deploy.js
+
+    deploy a new version to the available EC2.
+    
+    -e ELB_NAME foobar    change the ELB to deploy to. default is 'donate'

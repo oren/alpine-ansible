@@ -22,7 +22,7 @@ io.js, Ansible, boto and aws client in a minimal Docker Image.
 ## Push to Dockerhub
 
     docker login
-    docker tag oreng/ansible oreng/ansible:1.0.0
+    docker tag alpineansible_deploy oreng/ansible:1.0.0
     docker push oreng/ansible:1.0.0                                                                       
-    docker tag oreng/ansible oreng/ansible:latest
+    docker tag alpineansible_deploy oreng/ansible:latest
     docker push oreng/ansible:latest
